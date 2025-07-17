@@ -1,0 +1,13 @@
+# contents of a minimal pyproject.toml 
+
+[build-system] 
+requires = ["hatchling"] 
+build-backend = "hatchling.build" 
+
+[project] 
+name = "example_package_pm_gusmano" 
+version = "0.1.0" 
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+test = ["pytest"]
